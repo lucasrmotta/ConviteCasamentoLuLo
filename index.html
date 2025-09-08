@@ -42,7 +42,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 50px;
+            padding: 24px;
+            min-height: 100vh;
+            /* importante para não colar */
         }
 
         @keyframes bgMove {
@@ -67,13 +69,14 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
             overflow: hidden;
             position: relative;
+            margin: 40px 0;  
         }
 
         /* Ornamentos florais (SVG inline) */
         .ornament {
             position: absolute;
             inset: auto auto 0 0;
-            width: 220px;
+            width: 320px;
             opacity: .70;
             pointer-events: none;
             transform: translate(-10px, 10px) rotate(180deg);
@@ -322,12 +325,12 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 280px;
+                width: 350px;
                 /* ajuste conforme necessário */
                 height: auto;
                 pointer-events: none;
                 user-select: none;
-                opacity: 0.3;
+                opacity: 0.35;
             }
         </style>
 
