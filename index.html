@@ -74,7 +74,7 @@
             position: absolute;
             inset: auto auto 0 0;
             width: 220px;
-            opacity: .85;
+            opacity: .70;
             pointer-events: none;
             transform: translate(-10px, 10px) rotate(180deg);
             filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .06));
@@ -126,7 +126,7 @@
 
         .pane {
             min-width: 100%;
-            padding: 28px;
+            padding: 5px;
             display: grid;
             place-items: center
         }
@@ -327,32 +327,9 @@
                 height: auto;
                 pointer-events: none;
                 user-select: none;
-                opacity: 0.8;
+                opacity: 0.4;
             }
         </style>
-
-        <!-- <svg class="ornament top" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <g fill="none" stroke="#8eaa98" stroke-width="2" stroke-linecap="round" opacity=".9">
-                <path d="M10,120 C40,90 50,55 90,45 C125,36 150,55 170,78" />
-                <path d="M42,128 C65,105 78,84 110,78" />
-            </g>
-            <g opacity=".7">
-                <ellipse cx="86" cy="58" rx="22" ry="14" fill="#dbe9dd" transform="rotate(-18 86 58)" />
-                <ellipse cx="58" cy="98" rx="18" ry="12" fill="#e7f1ea" transform="rotate(-12 58 98)" />
-                <ellipse cx="134" cy="78" rx="20" ry="12" fill="#ccddcf" transform="rotate(14 134 78)" />
-            </g>
-        </svg>
-        <svg class="ornament" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <g fill="none" stroke="#8eaa98" stroke-width="2" stroke-linecap="round" opacity=".9">
-                <path d="M10,120 C40,90 50,55 90,45 C125,36 150,55 170,78" />
-                <path d="M42,128 C65,105 78,84 110,78" />
-            </g>
-            <g opacity=".7">
-                <ellipse cx="86" cy="58" rx="22" ry="14" fill="#dbe9dd" transform="rotate(-18 86 58)" />
-                <ellipse cx="58" cy="98" rx="18" ry="12" fill="#e7f1ea" transform="rotate(-12 58 98)" />
-                <ellipse cx="134" cy="78" rx="20" ry="12" fill="#ccddcf" transform="rotate(14 134 78)" />
-            </g>
-        </svg> -->
 
         <div class="shell">
             <div class="steps" aria-hidden="true">
@@ -391,12 +368,6 @@
                                     <div class="muted">Espaço Martilia</div>
                                     <div class="muted">R. Ernesto Vidotti Filho, 115 - São Carlos, SP</div>
                                 </div>
-                                <!-- <div class="box">
-                                    <h3>Recepção</h3>
-                                    <div>A partir das 18h00</div>
-                                    <div class="muted">Espaço Garden</div>
-                                    <div class="muted">Av. Jardim, 456 — São Carlos</div>
-                                </div> -->
                             </div>
 
                             <div class="btns">
@@ -408,48 +379,28 @@
 
                     <!-- ETAPA 3 — RSVP (local/offline) -->
                     <section class="pane">
-                        <!-- <iframe allowtransparency="true" id="external-rsvp-iframe"
-                            ng-src="https://d26xexzcqyxhox.cloudfront.net/?eh=f0125e90-f3c4-11ef-ac17-8ff27e62c3d3&amp;ff=Lato%2C+sans-serif&amp;tfs=15px&amp;tc=%23868686&amp;bfs=15px&amp;bc=%23ffffff&amp;bbc=%23707070&amp;fonts=https://fonts.googleapis.com/css?family=Lato:300,400,700"
-                            style="background: none transparent; border: none; min-height: 300px; width: 100%; height: 300px; overflow: hidden;"
+
+                        <div class="center">
+                            <h3 style="margin:0 0 8px;color:var(--accent);font-size:22px">Confirme sua presença</h3>
+                            <p class="muted" style="margin:0 0 2px">
+                                Sua confirmação nos ajuda a preparar tudo com carinho.
+                            </p>
+                        </div>
+
+                        <iframe allowtransparency="true" id="external-rsvp-iframe"
+                            ng-src="https://d26xexzcqyxhox.cloudfront.net/?eh=f0125e90-f3c4-11ef-ac17-8ff27e62c3d3&amp;ff=Lato%2C+sans-serif&amp;tfs=12px&amp;tc=%23868686&amp;bfs=15px&amp;bc=%23ffffff&amp;bbc=%236f8f78&amp;br=20px&amp;fonts=https://fonts.googleapis.com/css?family=Lato:300,400,700"
+                            style="background: none transparent; border: none; min-height: 110%; width: 100%; height: 110%; overflow: scroll;"
                             title="formulario rsvp"
-                            src="https://d26xexzcqyxhox.cloudfront.net/?eh=f0125e90-f3c4-11ef-ac17-8ff27e62c3d3&amp;ff=Lato%2C+sans-serif&amp;tfs=15px&amp;tc=%23868686&amp;bfs=15px&amp;bc=%23ffffff&amp;bbc=%23707070&amp;fonts=https://fonts.googleapis.com/css?family=Lato:300,400,700"
-                            scrolling="no">
+                            src="https://d26xexzcqyxhox.cloudfront.net/?eh=f0125e90-f3c4-11ef-ac17-8ff27e62c3d3&amp;ff=Lato%2C+sans-serif&amp;tfs=12px&amp;tc=%23868686&amp;bfs=15px&amp;bc=%23ffffff&amp;bbc=%236f8f78&amp;br=20px&amp;fonts=https://fonts.googleapis.com/css?family=Lato:300,400,700"
+                            scrolling="yes">
                         </iframe>
 
-                        <button type="submit">Confirmar</button>
-                         <div id="ok" class="ok" style="display:none"></div> -->
 
-                        <form id="formRSVP" autocomplete="on">
-                            <div class="center">
-                                <h3 style="margin:0 0 8px;color:var(--accent);font-size:22px">Confirme sua presença</h3>
-                                <p class="muted" style="margin:0 0 10px">
-                                    Sua confirmação nos ajuda a preparar tudo com carinho.
-                                </p>
-                            </div>
+                        <div class="btns">
+                            <button class="ghost" id="back3" type="button">Voltar</button>
+                            <button type="submit" id="next3">Já Confirmei!</button>
+                        </div>
 
-                            <!-- <input required name="nome" placeholder="Seu nome completo" />
-                            <select name="qtde" aria-label="Quantidade de convidados">
-                                <option value="1">Vou sozinho(a)</option>
-                                <option value="2">+ 1 acompanhante</option>
-                                <option value="3">+ 2 acompanhantes</option>
-                                <option value="4">+ 3 acompanhantes</option>
-                            </select>
-                            <textarea name="msg" rows="3" placeholder="Mensagem aos noivos (opcional)"></textarea> -->
-
-                            <iframe allowtransparency="true" id="external-rsvp-iframe"
-                                ng-src="https://d26xexzcqyxhox.cloudfront.net/?eh=f0125e90-f3c4-11ef-ac17-8ff27e62c3d3&amp;ff=Lato%2C+sans-serif&amp;tfs=15px&amp;tc=%23868686&amp;bfs=15px&amp;bc=%23ffffff&amp;bbc=%23707070&amp;fonts=https://fonts.googleapis.com/css?family=Lato:300,400,700"
-                                style="background: none transparent; border: none; min-height: 300px; width: 100%; height: 300px; overflow: hidden;"
-                                title="formulario rsvp"
-                                src="https://d26xexzcqyxhox.cloudfront.net/?eh=f0125e90-f3c4-11ef-ac17-8ff27e62c3d3&amp;ff=Lato%2C+sans-serif&amp;tfs=15px&amp;tc=%23868686&amp;bfs=15px&amp;bc=%23ffffff&amp;bbc=%23707070&amp;fonts=https://fonts.googleapis.com/css?family=Lato:300,400,700"
-                                scrolling="no">
-                            </iframe>
-
-                            <div class="btns">
-                                <button class="ghost" id="back3" type="button">Voltar</button>
-                                <button type="submit">Confirmar</button>
-                            </div>
-                            <div id="ok" class="ok" style="display:none"></div>
-                        </form>
                     </section>
 
                     <!-- ETAPA 4 — EXTRAS -->
@@ -457,32 +408,33 @@
                         <div class="center">
                             <h3 style="margin:0 0 6px;color:var(--accent);font-size:22px">Tudo certo! 💚</h3>
                             <p class="lead" style="max-width:620px;margin-inline:auto">
-                                Obrigado por confirmar. Vai ser lindo ter você com a gente!
+                                Obrigado por confirmar. Vai ser lindo ter você com a gente! <br />
+                                Para lista de presentes, acesse nosso site <a
+                                    href="https://www.lorenelucas.icasei.com">aqui</a> 🌎
                             </p>
-
-                            <div class="btns" style="margin-top:10px">
-                                <a class="btn" id="btnCalendar" download="Loren-e-Lucas.ics">Adicionar ao calendário</a>
-                                <button class="ghost" id="btnVoltarInicio">Voltar ao início</button>
-                            </div>
-
                             <div class="grid2" style="margin-top:18px">
 
                                 <div class="box">
-                                    <h3>Endereço (recepção)</h3>
+                                    <h3>Local</h3>
                                     <div>Espaço Martilha</div>
                                     <div>São Carlos — SP</div>
                                     <div class="btns" style="margin:10px 0">
                                         <button id="copyEndereco" class="ghost">Copiar endereço</button>
+                                        <button id="maps" class="ghost">Navegar Para Lá📍</button>
                                     </div>
                                 </div>
 
                                 <div class="box">
                                     <h3>Traje sugerido</h3>
                                     <div>Esporte fino</div>
-                                    <p class="muted" style="margin:8px 0 0">Sinta-se à vontade para tons neutros e
-                                        verdes.</p>
                                 </div>
                             </div>
+
+                            <div class="btns" style="margin-top:20px">
+                                <a class="btn" id="btnCalendar" download="Loren-e-Lucas.ics">Adicionar ao calendário</a>
+                                <button class="ghost" id="btnVoltarInicio">Voltar ao início</button>
+                            </div>
+
 
                         </div>
                     </section>
@@ -509,26 +461,9 @@
         document.getElementById('back2').onclick = () => go(0);
         document.getElementById('next2').onclick = () => go(2);
         document.getElementById('back3').onclick = () => go(1);
+        document.getElementById('next3').onclick = () => go(3);
         document.getElementById('btnVoltarInicio').onclick = () => go(0);
 
-        // RSVP local (salva no localStorage)
-        const form = document.getElementById('formRSVP');
-        const ok = document.getElementById('ok');
-
-        // preenche se já houver
-        const saved = JSON.parse(localStorage.getItem('rsvp_ll') || 'null');
-        if (saved) {
-            for (const k in saved) { if (form[k]) form[k].value = saved[k]; }
-        }
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const data = Object.fromEntries(new FormData(form).entries());
-            localStorage.setItem('rsvp_ll', JSON.stringify(data));
-            ok.style.display = 'block';
-            ok.textContent = `Confirmado, ${data.nome}!`;
-            setTimeout(() => go(3), 900);
-        });
 
         // Copiar endereço
         document.getElementById('copyEndereco').onclick = async (e) => {
@@ -537,6 +472,19 @@
             try { await navigator.clipboard.writeText(txt); e.target.textContent = 'Endereço copiado! ✓'; }
             catch { alert(txt); }
             setTimeout(() => e.target.textContent = 'Copiar endereço', 1600);
+        };
+
+        //Maps
+        document.getElementById("maps").onclick = function () {
+            const destino = "-22.080021387655854, -47.837706545292235";
+
+            // Tenta abrir no Waze
+            window.location.href = `https://www.google.com/maps/search/?api=1&query=${destino}`;
+
+            // Se não tiver Waze, depois de 1s cai no Google Maps
+            setTimeout(() => {
+                window.location.href = `https://www.google.com/maps/search/?api=1&query=${destino}`;
+            }, 500);
         };
 
         // Arquivo .ics (funciona offline)
@@ -569,6 +517,7 @@
             document.getElementById('btnCalendar').setAttribute('href', href);
         })();
     </script>
+
 </body>
 
 </html>
